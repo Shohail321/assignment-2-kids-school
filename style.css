@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.quicksand-font{
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  
-  header{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /* mobile menu */
 .menu-icon {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   font-size: 35px;
   font-weight: bold;
   cursor: pointer;
-  padding: 15px; 
-  color: rgb(0, 0, 0); 
- 
-}
-/* Toggle menu using the checkbox hack */
-.menu-toggle {
-  display: none; /* Hide checkbox */
+  padding: 15px;
+  color: rgb(0, 0, 0);
+
 }
 
-.menu-toggle:checked + .mobile-menu {
+/* Toggle menu using the checkbox hack */
+.menu-toggle {
+  display: none;
+  /* Hide checkbox */
+}
+
+.menu-toggle:checked+.mobile-menu {
   display: block;
   /* transform: translateX(0); Slide menu into view */
 }
@@ -34,71 +37,81 @@
 
 
 
-  /* navbar styles */
+/* navbar styles */
 
-  .nav-bar{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-  }
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
 
- .logo-title{
+.logo-title {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
- .logo-title h3{
+.logo-title h3 {
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 0;
- }  
- 
- .logo-title img{
+}
+
+.logo-title img {
   width: 100%;
   height: auto;
- } 
- 
-  .nav-title{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 0;
-  }
-  .nav-links{
-    padding-top: 15px;
-  }
+}
 
-  .nav-links a{
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin: 30px 15px;
-      justify-content: center;
-      align-items: center;
-  
-  }
+.nav-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
 
-  .nav-btn{
-    background-color: orange;
-    border: none;
-    border-radius: 12px;
-    padding: 0px 50px;
-    color: aliceblue;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
+.nav-links {
+  padding-top: 15px;
+}
 
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 30px 15px;
+  justify-content: center;
+  align-items: center;
 
+}
 
-  /* hero section style */
-.hero-section{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-.hero-title{
+.nav-btn {
+  background-color: orange;
+  border: none;
+  border-radius: 12px;
+  padding: 0px 50px;
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.nav-btn:hover {
+  background-color: #000;
+  transition: .4s;
+}
+
+.line {
+  display: none;
+}
+
+/* hero section style */
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-title {
   margin-top: 125px;
   margin-bottom: 25px;
   font-size: 3.5rem;
@@ -106,19 +119,26 @@
   line-height: 1;
 }
 
-.hero-description{
-  font-size: 1.2rem; 
+.hero-description {
+  font-size: 1.2rem;
 }
 
-.hero-btn{
+.hero-btn {
   background-color: black;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 30px;
+  border: none;
   border-radius: 12px;
   margin-top: 25px;
   cursor: pointer;
+  transition: .4s;
+}
+
+.hero-btn:hover {
+  transition: .5s;
+  background-color: #34c0eb;
 }
 
 
@@ -126,44 +146,64 @@
 
 
 
-  /* curriculum section */
-.curriculum{
-   background-image: url(assets/bg.png);
-   background-size: cover;
+/* curriculum section */
+.curriculum {
+  background-image: url(assets/bg.png);
+  background-size: cover;
 }
 
-.curri-container{
+.curri-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-.curri-container h3{
+
+.curri-container h3 {
   margin-top: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
 }
-.curri-cards{
+
+.marquee-news {
+  margin-bottom: 20px;
+  background-color: #FFF4DC;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #97c6f7;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/
+}
+
+.curri-cards {
   display: flex;
   gap: 35px;
 }
-.curri-card{
+
+.curri-card {
   width: 340px;
   height: 400px;
   padding: 40px;
   border-radius: 20px;
   text-align: center;
-  box-shadow:  0px 3px 3px 3px rgba(85, 84, 84, 0.06);;
-  
+  box-shadow: 0px 3px 3px 3px rgba(85, 84, 84, 0.06);
+  ;
+
 }
-.curri-info{
+
+.curri-info {
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 2;
   color: rgb(133, 135, 137);
 }
-.curri-btn{
+
+.curri-btn {
   border: none;
   background: none;
   cursor: pointer;
@@ -171,7 +211,8 @@
   font-weight: bold;
 
 }
-.arrow-btn{
+
+.arrow-btn {
   background-color: orange;
   border: none;
   border-radius: 50px;
@@ -179,11 +220,12 @@
   padding: 15px 17px;
   cursor: pointer;
 }
-.arrow-btn:hover{
+
+.arrow-btn:hover {
   background-color: rgb(14, 13, 13);
 }
 
-.arrow-left{
+.arrow-left {
   border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -193,7 +235,7 @@
 
 }
 
-.arrow-right{
+.arrow-right {
   border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -206,20 +248,23 @@
 
 
 /* Our stories */
-.stories-section{
-  background-image: url(assets/bg.png);
+.stories-section {
+ 
+  background: linear-gradient(-60deg, #DEF5FF 10%, #FFFFFF 30%);
   background-size: cover;
- 
- 
+
+
 }
-.stories-container{
+
+.stories-container {
+  background-image: url(assets/bg.png);
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  
+
 }
 
-.stories-container h3{
+.stories-container h3 {
   margin-top: 70px;
   margin-bottom: 80px;
   text-align: center;
@@ -231,48 +276,71 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  
 
- 
+
+
 }
 
-.card{
+.card {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   overflow: hidden;
-  
+  position: relative;
+
 }
 
-#card-large { 
+#card-large {
   grid-column: span 2;
   grid-row: span 2;
 }
-.card h2{
+
+.card h2 {
   padding: 5px 30px;
- 
+
 }
-.card-content p{
+
+.card-content p {
+  font-size: 12px;
   color: #a7a7a7;
 }
-.card p{
+
+.card p {
   padding: 5px 30px;
   font-weight: 700;
 }
+
 .card img {
   width: 100%;
   height: auto;
 }
-.date {
+.date-large{
+  position: absolute;
   background: #34c0eb;
   color: #fff;
   padding: 8px 15px;
   border: none;
   border-radius: 50px;
   font-size: 0.9rem;
-  margin-top: -50px;
-  
+  transform: translateX(-50%);
+  bottom: 170px;
+  left: 20%; 
+}
+
+.date {
+  position: absolute;
+  background: #34c0eb;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 160px;
+  left: 40%;
+  transform: translateX(-50%);
+
 }
 
 
@@ -298,61 +366,68 @@
 
 /* footer section style */
 
-.footer-container{
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
 
   justify-content: space-between;
 }
-.footer-left{
+
+.footer-left {
   margin-top: 100px;
   margin-bottom: 150px;
 }
 
-.footer-logo-title{
+.footer-logo-title {
   display: flex;
   align-items: center;
   margin-bottom: 0px;
 }
-.footer-logo-title h4{
+
+.footer-logo-title h4 {
   font-size: 2rem;
   color: #fff;
   line-height: 1;
 }
-.footer-left p{
+
+.footer-left p {
   margin-top: 0px;
   color: #eaeaea;
 }
 
-.footer-middle{
+.footer-middle {
   margin-top: 100px;
   margin-bottom: 150px;
 }
-.footer-middle h4{
+
+.footer-middle h4 {
   color: #fff;
   font-size: 1.5rem;
 }
-.footer-middle li{
+
+.footer-middle li {
   list-style: none;
   margin-top: 15px;
 }
-.footer-middle li a{
+
+.footer-middle li a {
   text-decoration: none;
   color: #fff;
   font-size: .9rem;
 }
 
-.footer-right{
+.footer-right {
   margin-top: 100px;
   margin-bottom: 150px;
 }
 
-.footer-right h4{
+.footer-right h4 {
   color: #fff;
   font-size: 1.5rem;
 }
-.footer-right a{
+
+.footer-right a {
   margin: 3px;
 }
 
@@ -368,127 +443,177 @@
 
 
 
-  /* responsive style */
+/* responsive style */
 
-  /* Small Devices */
+/* Small Devices */
 
-  /* small size */
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
-    .menu-icon {
-      display: block;
-    }
-
-
-    .nav-links, .nav-btn, .nav-title, .arrow-btn{
-      display: none;
-    }
-
-    #card-large{
-      display: none;
-    }
-
-    .logo-title img{
-      margin-left: 20px;
-    }
-
-
-    /* hero section small devices style */
-
-    .hero-section{
-      flex-direction: column-reverse;
-      text-align: center;
-    }
-    .hero-section img{
-      padding: 20px;
-    }
-    .hero-title{
-      padding: 10px;
-      font-size: 2.2rem;
-      margin-top: 20px;
-    }
-    .hero-description{
-      padding: 15px;
-    }
-    .hero-btn{
-      margin-top: 10px;
-    }
-
-
-/* curriculum styles for small devices */
-    .curri-cards, .footer-container{
-      flex-direction: column;
-    }
-    .curri-card{
-      max-width: 70%;
-      min-height: 200px;
-      margin: 20px;
-    }
-    .curri-cards{
-      gap: 10px;
-    }
-    .curri-container h3{
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-
-
-/* stories section styles for small devices */
-
-    .card-container{
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-
-
-
-    .footer-left, .footer-middle, .footer-right{
-      margin-left: 20px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    
-    .card-container{
-      margin: 15px;
-    }
-
-    
-    
+  .menu-icon {
+    display: block;
   }
+
+  .line {
+    display: block;
+    border: .5px solid orange;
+    margin-top: 10px;
+
+  }
+
+
+  .nav-links,
+  .nav-btn,
+  .nav-title,
+  .arrow-btn {
+    display: none;
+  }
+
+  #card-large {
+    display: none;
+  }
+
+  .logo-title img {
+    margin-left: 20px;
+  }
+
+
+  /* hero section small devices style */
+
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-section img {
+    padding: 20px;
+  }
+
+  .hero-title {
+    padding: 10px;
+    font-size: 2.2rem;
+    margin-top: 20px;
+  }
+
+  .hero-description {
+    padding: 15px;
+  }
+
+  .hero-btn {
+    margin-top: 10px;
+  }
+
+
+  /* curriculum styles for small devices */
+  .curri-cards,
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .curri-card {
+    max-width: 70%;
+    min-height: 200px;
+    margin: 20px;
+  }
+
+  .curri-cards {
+    gap: 10px;
+  }
+
+  .curri-container h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+
+
+  /* stories section styles for small devices */
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  
+  .date {
+    position: absolute;
+    background: #34c0eb;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+  }
+
+
+
+
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-container {
+    margin: 15px;
+  }
+
+}
 
 /* medium */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
 
-  .nav-links, .nav-btn, .nav-title, .arrow-btn{
+  .nav-links,
+  .nav-btn,
+  .nav-title,
+  .arrow-btn {
     display: none;
   }
 
   .menu-icon {
     display: block;
   }
-  .hero-section{
+
+  .line {
+    display: block;
+    border: .5px solid orange;
+    margin-top: 10px;
+
+  }
+
+  .hero-section {
     flex-direction: column;
     text-align: center;
   }
-  .hero-section img{
-    padding: 20px;
+
+  .hero-section img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .curri-card{
+  .curri-card {
     min-height: 200px;
     margin: 5px;
   }
-  #card-large{
+
+  #card-large {
     display: none;
   }
-  .card-container{
+
+  .card-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 20px;
   }
 
-   
-    
+
+
 }
