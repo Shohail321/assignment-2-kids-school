@@ -14,7 +14,6 @@ header {
 /* mobile menu */
 .menu-icon {
   display: none;
-  /* Hidden by default */
   font-size: 35px;
   font-weight: bold;
   cursor: pointer;
@@ -23,16 +22,12 @@ header {
 
 }
 
-/* Toggle menu using the checkbox hack */
+
 .menu-toggle {
   display: none;
-  /* Hide checkbox */
+ 
 }
 
-.menu-toggle:checked+.mobile-menu {
-  display: block;
-  /* transform: translateX(0); Slide menu into view */
-}
 
 
 
@@ -102,6 +97,9 @@ header {
 .line {
   display: none;
 }
+
+
+
 
 /* hero section style */
 .hero-section {
@@ -277,8 +275,6 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 
-
-
 }
 
 .card {
@@ -439,10 +435,6 @@ header {
 
 
 
-
-
-
-
 /* responsive style */
 
 /* Small Devices */
@@ -551,8 +543,6 @@ header {
 
 
 
-
-
   .footer-left,
   .footer-middle,
   .footer-right {
@@ -566,6 +556,8 @@ header {
   }
 
 }
+
+
 
 /* medium */
 
@@ -613,7 +605,6 @@ header {
     grid-template-columns: repeat(2, 1fr);
     margin: 20px;
   }
-
 
 
 }
