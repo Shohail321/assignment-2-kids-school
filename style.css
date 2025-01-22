@@ -63,6 +63,7 @@
     color: aliceblue;
     font-size: 1.2rem;
     font-weight: 600;
+    cursor: pointer;
   }
 
 
@@ -105,12 +106,13 @@
   /* curriculum section */
 .curriculum{
    background-image: url(assets/bg.png);
-   background-size: auto;
+   background-size: cover;
 }
 
 .curri-container{
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 .curri-container h3{
   margin-top: 70px;
@@ -146,6 +148,199 @@
   font-weight: bold;
 
 }
+.arrow-btn{
+  background-color: orange;
+  border: none;
+  border-radius: 50px;
+  margin-top: 60px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.arrow-btn:hover{
+  background-color: rgb(14, 13, 13);
+}
+
+.arrow-left{
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+
+}
+
+.arrow-right{
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+}
+
+
+
+/* Our stories */
+.stories-section{
+  background-image: url(assets/bg.png);
+  background-size: cover;
+ 
+ 
+}
+.stories-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.stories-container h3{
+  margin-top: 70px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  
+
+ 
+}
+
+.card{
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+  
+}
+
+#card-large { 
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.card h2{
+  padding: 5px 30px;
+ 
+}
+.card-content p{
+  color: #a7a7a7;
+}
+.card p{
+  padding: 5px 30px;
+  font-weight: 700;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.date {
+  background: #34c0eb;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-top: -50px;
+  
+}
+
+
+
+.view-all {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.view-all:hover {
+  background: #333;
+}
+
+
+
+/* footer section style */
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+.footer-left{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.footer-logo-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.footer-logo-title h4{
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1;
+}
+.footer-left p{
+  margin-top: 0px;
+  color: #eaeaea;
+}
+
+.footer-middle{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.footer-middle h4{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer-middle li{
+  list-style: none;
+  margin-top: 15px;
+}
+.footer-middle li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: .9rem;
+}
+
+.footer-right{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.footer-right h4{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.footer-right a{
+  margin: 3px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,11 +355,33 @@
       display: none;
     }
 
+    #card-large{
+      display: none;
+    }
+
     .logo-title img{
       margin-left: 20px;
     }
-    
-  
+    .hero-section{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .hero-section img{
+      padding: 20px;
+    }
+
+    .curri-cards, .footer-container{
+      flex-direction: column;
+    }
+
+    .card-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-left, .footer-middle, .footer-right{
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     
   }
 
